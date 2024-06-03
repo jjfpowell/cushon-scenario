@@ -9,7 +9,7 @@ interface LinkedButton {
 
 const LinkedButton = ({ text, link, style }: LinkedButton) => {
   return (
-    <Link href={link} className={style}>
+    <Link href={link} className={style} data-testid={text.concat(link)}>
       {text}
     </Link>
   );

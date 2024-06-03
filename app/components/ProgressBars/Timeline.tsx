@@ -28,7 +28,7 @@ const Timeline = ({ blogPosts }: { blogPosts: BlogPreview[] }) => {
             }`}
           >
             <div
-              className={`flex flex-row justify-start ${
+              className={`flex flex-row ${
                 index % 2 === 0 ? 'justify-end' : 'justify-start'
               }`}
             >

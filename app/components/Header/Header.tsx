@@ -4,7 +4,7 @@ import LinkedButton from '../Buttons/LinkedButton';
 const Header = () => {
   return (
     <div className="navbar bg-neutral">
-      <img className="px-4" src="/logo.svg"></img>
+      <img className="px-4" src="/logo.svg" alt="logo"></img>
       <div className="btn btn-ghost text-base font-light">About</div>
       <div className="dropdown dropdown-start">
         <div
@@ -19,10 +19,12 @@ const Header = () => {
           className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60"
         >
           <li>
-            <a className="justify-between">ISA</a>
+            <a data-testid="workplaceIsa" className="justify-between">
+              ISA
+            </a>
           </li>
           <li>
-            <a>Pension</a>
+            <a data-testid="workplacePension">Pension</a>
           </li>
         </ul>
       </div>
@@ -43,10 +45,11 @@ const Header = () => {
               text="ISA"
               link="/retail/isa"
               style="justify-between"
+              data-testid="retailIsa"
             />
           </li>
           <li>
-            <a>
+            <a data-testid="retailPension">
               Pension
               <span className="badge">Coming soon!</span>
             </a>
