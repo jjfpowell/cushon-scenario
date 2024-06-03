@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 
 const db = DbSingleton.getInstance();
 
-const depositAction = async (fundUuid: string, formData: FormData) => {
+const DepositAction = async (fundUuid: string, formData: FormData) => {
   const depositAmount = formData.get('amount');
   const reference = generatePaymentReference();
 
@@ -38,4 +38,4 @@ function generatePaymentReference(): string {
   return reference;
 }
 
-export default depositAction;
+export default DepositAction;

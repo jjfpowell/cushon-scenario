@@ -1,9 +1,9 @@
 'use client ';
 
-import depositAction from '@/actions/depositAction';
+import DepositAction from '@/actions/DepositAction';
 
-const depositForm = async ({ fundUuid }: { fundUuid: string }) => {
-  const depositActionWithFundUuid = depositAction.bind(null, fundUuid);
+const DepositForm = async ({ fundUuid }: { fundUuid: string }) => {
+  const depositActionWithFundUuid = DepositAction.bind(null, fundUuid);
 
   return (
     <form action={depositActionWithFundUuid} className="self-center">
@@ -34,4 +34,4 @@ const depositForm = async ({ fundUuid }: { fundUuid: string }) => {
   );
 };
 
-export default depositForm;
+export default DepositForm;
