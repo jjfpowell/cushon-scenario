@@ -12,11 +12,9 @@ const Accordion = ({ data }: AccordionProps) => {
       {Object.entries(data).map(([key, value], index) => (
         <div key={index} className="collapse collapse-arrow bg-base-100">
           <input type="radio" name="accordion" />
-          <div className="collapse-title text-xl font-medium">
-            {key as string}
-          </div>
+          <div className="collapse-title text-xl font-medium">{key}</div>
           <div className="collapse-content">
-            <p>{value as string}</p>
+            <p>{value}</p>
           </div>
         </div>
       ))}

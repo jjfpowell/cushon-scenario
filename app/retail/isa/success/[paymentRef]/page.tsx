@@ -13,7 +13,7 @@ const IsaDeposit = async ({ params }: { params: { paymentRef: string } }) => {
           currentStep={2}
         />
         <p className="place-self-center text-center pt-4 max-w-4xl text-white">
-          Congratualtions! Your ISA has been successfully created please use the
+          Congratultions! Your ISA has been successfully created please use the
           deposit reference to locate your account on signup.
         </p>
         <div className="card w-96 bg-white text-neutral-content my-4 place-self-center">
